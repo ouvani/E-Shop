@@ -6,8 +6,7 @@ export const aesthetics = [
 		tags: ["books", "study", "moody", "vintage"], 
     type: "stable",
     category: "home"
-	},
-	{
+	},{
 		name: "Cottagecore",
 		slug: "cottagecore",
 		description: "soft life, gardens, slow mornings",
@@ -121,3 +120,8 @@ export const aesthetics = [
     category: "tech"
   }
 ];
+
+export type Aesthetic = typeof aesthetics[number];
+/*Take the category field from any aesthetic "home" | "tech" | "lifestyle" | "fashion"
+automatically inferred from your data.*/
+export type AestheticCategory = Aesthetic["category"];
