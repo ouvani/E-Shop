@@ -5,119 +5,153 @@ export const aesthetics = [
 		description: "libraries, coffee, rainy intellect",
 		tags: ["books", "study", "moody", "vintage"], 
     type: "stable",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/dark-academia.png`,
+    video : "",
 	},{
 		name: "Cottagecore",
 		slug: "cottagecore",
 		description: "soft life, gardens, slow mornings",
 		tags: ["nature", "soft", "pastoral", "cozy"], 
     type: "stable",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/cottagecore.png`,
+    video : "",
 	},{
 		name: "Y2K",
 		slug: "y2k",
 		description: "chrome, pink tech, early internet energy",
 		tags: ["retro", "digital", "pink", "glossy"], 
     type: "stable",
-    category: ""
+    category: "lifestyle",
+    image : `src/lib/assets/images/aesthetics-thumbnails/y2k.png`,
+    video : "",
 	},{
 		name: "Old Money",
 		slug: "old-money",
 		description: "quiet luxury, neutral tones, elegance",
 		tags: ["luxury", "minimal", "neutral", "classic"], 
     type: "stable",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/old-money.png`,
+    video : "",
 	},{
     name: "Coquette",
     slug: "coquette",
     description: "bows, lace, soft feminine aesthetic",
     tags: ["feminine", "pink", "lace", "romantic"],
     type: "trendy",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/coquette.png`,
+    video : "",
   }, {
     name: "Eclectic Grandpa",
     slug: "eclectic-grandpa",
     description: "chaotic cozy clutter, vintage randomness",
     tags: ["vintage", "quirky", "cozy", "nostalgic"],
     type: "trendy",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/eclectic-grandpa.png`,
+    video : "",
   }, {
     name: "Kawaii",
     slug: "kawaii",
     description: "cute overload, pastel joy, softness",
     tags: ["cute", "pastel", "anime", "soft"],
     type: "stable",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/kawaii.png`,
+    video : "",
   }, {
     name: "Minimalist",
     slug: "minimalist",
     description: "clean spaces, neutral tones, simple living",
     tags: ["clean", "neutral", "simple", "modern"],
     type: "stable",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/minimalist.png`,
+    video : "",
   }, {
     name: "Urban",
     slug: "urban",
     description: "street style, city life, casual edge",
     tags: ["streetwear", "city", "casual", "modern"],
     type: "stable",
-    category: "lifestyle"
+    category: "lifestyle",
+    image : `src/lib/assets/images/aesthetics-thumbnails/urban.png`,
+    video : "",
   }, {
     name: "Vintage",
     slug: "vintage",
     description: "retro fashion, timeless old-school style",
     tags: ["retro", "classic", "old-school", "nostalgic"],
     type: "stable",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/vintage.png`,
+    video : "",
   }, {
     name: "Soft Girl",
     slug: "soft-girl",
     description: "pastel outfits, gentle feminine vibe",
     tags: ["pastel", "cute", "feminine", "soft"],
     type: "trendy",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/soft-girl.png`,
+    video : "",
   }, {
     name: "Bimbocore",
     slug: "bimbocore",
-    description: "pink glam, playful confidence, hyper-feminine style",
+    description: "pink glam, confidence, hyper-feminine style",
     tags: ["pink", "glam", "bold", "feminine"],
     type: "rising",
-    category: "home"
+    category: "home",
+    image : `src/lib/assets/images/aesthetics-thumbnails/bimbocore.png`,
+    video : "",
   }, {
     name: "Corporate America",
     slug: "corporate-america",
     description: "office wear, business casual, professional aesthetic",
     tags: ["office", "formal", "professional", "minimal"],
     type: "stable",
-    category: "lifestyle"
+    category: "lifestyle",
+    image : `src/lib/assets/images/aesthetics-thumbnails/corporate-america.png`,
+    video : "",
   },{
     name: "Sports",
     slug: "sports",
     description: "athletic wear, active lifestyle, comfort focus",
     tags: ["athletic", "gym", "casual", "active"],
     type: "stable",
-    category: "lifestyle"
+    category: "lifestyle",
+    image : `src/lib/assets/images/aesthetics-thumbnails/sports.png`,
+    video : "",
   }, {
     name: "Gamer",
     slug: "gamer",
     description: "RGB setups, gaming rooms, tech-heavy aesthetic",
     tags: ["gaming", "RGB", "setup", "tech"],
     type: "stable",
-    category: "tech"
+    category: "tech",
+    image : `src/lib/assets/images/aesthetics-thumbnails/gamer.png`,
+    video : "",
   }, {
-    name: "Dark Hacker",
-    slug: "dark-hacker",
+    name: "Hacker",
+    slug: "hacker",
     description: "dark tech, cyber aesthetic, digital underground vibe",
     tags: ["tech", "dark", "cyber", "futuristic"],
     type: "stable",
-    category: "tech"
+    category: "tech",
+    image : `src/lib/assets/images/aesthetics-thumbnails/hacker.png`,
+    video : "",
   }, {
     name: "Internet Junkie",
     slug: "internet-junkie",
     description: "chaotic online culture, memes, digital overload",
     tags: ["internet", "chaos", "memes", "digital"],
     type: "stable",
-    category: "tech"
+    category: "tech",
+    image : `src/lib/assets/images/aesthetics-thumbnails/internet-junkie.png`,
+    video : "",
   }
 ];
 
