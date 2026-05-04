@@ -25,7 +25,7 @@
 			/>
 		{/each}
 
-		<!-- OVERLAY (this is what was broken before) -->
+		<!-- OVERLAY WITH DOTS -->
 		{#if slides.length > 0}
 			<div class="hero-overlay">
 				<h1>{slides[current].title}</h1>
@@ -34,19 +34,18 @@
 				<a class="shop-now" href={slides[current].link}>
 					Shop Now
 				</a>
+
+				<div class="dots">
+					{#each slides as _, i}
+						<button
+							class={i === current ? "dot active" : "dot"}
+							onclick={() => (current = i)}
+							aria-label={`Go to slide ${i + 1}`}
+						></button>
+					{/each}
+				</div>
 			</div>
 		{/if}
-	</div>
-
-	<!-- DOTS -->
-	<div class="dots">
-		{#each slides as _, i}
-			<button
-				class={i === current ? "dot active" : "dot"}
-				onclick={() => (current = i)}
-				aria-label={`Go to slide ${i + 1}`}
-			></button>
-		{/each}
 	</div>
 </section>
 
@@ -88,8 +87,9 @@
 
 		display: flex;
 		flex-direction: column;
-    align-items: center;
 		justify-content: flex-end;
+		align-items: center;
+		row-gap: 1rem;
 
 		padding: 1.5rem;
 
@@ -102,10 +102,10 @@
 		);
 	}
 
-	.hero-overlay h2 {
-		font-size: 1.8rem;
+	h1, p {
 		margin: 0;
-		font-family: var(--font-heading);
+		color: white;
+		text-align: center;
 	}
 
 	.hero-overlay p {
@@ -114,27 +114,35 @@
 	}
 
 	.shop-now {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		background: white;
 		color: black;
 		text-decoration: none;
 
 		padding: 0.6rem 1rem;
-		border-radius: 8px;
+		border-radius: 20px;
 		width: fit-content;
-
 		font-weight: 500;
 	}
 
+	.hero-overlay .dots,
 	.dots {
 		display: flex;
 		justify-content: center;
-		margin-top: 0.5rem;
+		align-items: center;
 		gap: 0.4rem;
+		width: 100%;
+	}
+
+	.hero-overlay .dots {
+		margin-top: 0.5rem;
 	}
 
 	.dot {
-		width: 8px;
-		height: 8px;
+		width: 10px;
+		height: 10px;
 		border-radius: 50%;
 		border: none;
 		background: #ccc;
@@ -143,5 +151,23 @@
 
 	.dot.active {
 		background: #111;
+	}
+
+	@media (max-width: 600px) {
+		.slider {
+			min-height: 300px;
+		}
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		.hero-overlay p {
+			font-size: 0.8rem;
+		}
+
+		.shop-now {
+			padding: 0.5rem 0.8rem;
+			font-size: 0.9rem;
+		}	
 	}
 </style>

@@ -2,6 +2,7 @@
 <script lang="ts">
   import { aesthetics } from '$lib/data/aesthetics';
   import type { Aesthetic, AestheticCategory } from '$lib/data/aesthetics';
+
   import AestheticCard from '$lib/components/AestheticCard.svelte';
 
   let grouped: Record<AestheticCategory, Aesthetic[]> = {
@@ -23,7 +24,17 @@
 {#each Object.entries(grouped) as [category, items]}
   {#if items.length> 0}
     <section>
-      <h2>{category}</h2>
+
+      {#if category == "home"}
+        <h2>Home</h2>
+      {:else if category == "tech"}
+        <h2>Tech</h2>
+      {:else if category == "lifestyle"}
+        <h2>Lifestyle</h2>
+      {:else if category == "fashion"}
+        <h2>Fashion</h2>
+      {/if}
+
       
       <div class="grid">
         {#each items as item}
